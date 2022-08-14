@@ -1,0 +1,147 @@
+/** Global Variables */
+
+
+/*** ----------------- Color Palette ---------------------*/ 
+$primary: #141414;
+$secondary: #141414;
+$tertiary: #141414;
+
+// Black 
+$black: #000000;
+
+// Slate 100 - 900
+$slate-100: rgba(0, 0, 0, 0.1); 
+$slate-200: rgba(0, 0, 0, 0.2); 
+$slate-300: rgba(0, 0, 0, 0.3); 
+$slate-400: rgba(0, 0, 0, 0.4); 
+$slate-500: rgba(0, 0, 0, 0.5); 
+$slate-600: rgba(0, 0, 0, 0.6); 
+$slate-700: rgba(0, 0, 0, 0.7);
+$slate-800: rgba(0, 0, 0, 0.8);
+$slate-900: rgba(0, 0, 0, 0.9);
+
+
+// Gray 100 - 900
+$gray-100: rgba(255, 255, 255, 0.9); 
+$gray-200: rgba(255, 255, 255, 0.8); 
+$gray-300: rgba(255, 255, 255, 0.7); 
+$gray-400: rgba(255, 255, 255, 0.6); 
+$gray-500: rgba(255, 255, 255, 0.5); 
+$gray-600: rgba(255, 255, 255, 0.4); 
+$gray-700: rgba(255, 255, 255, 0.3);
+$gray-800: rgba(255, 255, 255, 0.2);
+$gray-900: rgba(255, 255, 255, 0.1);
+
+
+// Theme
+$theme-bg-color: rgba(16, 18, 27, 0.4);
+$theme-color: rgb(249, 250, 251);
+
+
+// Font
+$body-font: "Poppins", sans-serif;
+
+
+// Typography
+$h1-size: 2.4rem;
+$h2-size: 1.6rem;
+$h3-size: 2rem;
+$h4-size: 1.4rem;
+$h5-size: 1rem;
+$h6-size: 0.8rem;
+$textField-size: 1rem;
+$body-size: 14px;
+$line-height: 1.6;
+
+
+// Font Weight
+$light: 300;
+$regular: 400;
+$medium: 500;
+$semiBold: 600;
+$bold: 700;
+
+// Padding
+$buttonPadding: 20px;
+
+
+
+
+/** ---------------- Media Query ---------------------*/ 
+
+// grid breakpoints
+$desktop: 1440px;
+$laptop: 1280px;
+$tablet: 768px;
+$mobile: 600px;
+
+// media breakpoint up
+$desktop-up: "only screen and (min-width : #{$desktop + 1})";
+$laptop-up: "only screen and (min-width : #{$laptop + 1})";
+$tablet-up: "only screen and (min-width : #{$tablet + 1})";
+// media breakpoint down
+$desktop-down: "only screen and (max-width : #{$desktop - 1})";
+$laptop-down: "only screen and (max-width : #{$laptop - 1})";
+$tablet-down: "only screen and (max-width : #{$tablet - 1})";
+// media breakpoint max
+$desktop-max: "only screen and (max-width : #{$desktop})";
+$laptop-max: "only screen and (max-width : #{$laptop})";
+$tablet-max: "only screen and (max-width : #{$tablet})";
+// media breakpoint min
+$desktop-min: "only screen and (min-width : #{$desktop})";
+$laptop-min: "only screen and (min-width : #{$laptop})";
+$tablet-min: "only screen and (min-width : #{$tablet})";
+
+
+
+// other
+$border-color: rgba(209, 209, 209, 0.112);
+$inactive-color: rgba(113, 119, 144, 0.78);
+$hover-menu-bg: rgba(12, 15, 25, 0.3);
+$content-title-color: #999ba5;
+$content-bg: rgba(146, 151, 179, 0.13);
+$button-inactive: rgba(249, 250, 251, 0.55);
+$dropdown-bg: #21242d;
+$dropdown-hover: rgb(42, 46, 60);
+$popup-bg: rgb(22, 25, 37);
+$search-bg:  #14162b;
+$overlay-bg: rgba(36, 39, 59, 0.3);
+$scrollbar-bg: rgba(1, 2, 3, 0.4);
+$radius: 4px;
+
+$color: #a99d7f;
+$secondary: #b0bec5;
+$warn: #f44336;
+$success: #4caf50;
+$gray: #353535;
+$bodyColor: #141414;
+$lGray: #b0b1b3;
+$dGray: #1a1a1a;
+$white: #ffffff;
+$borderColor: rgba(255, 255, 255, 0.24);
+$off-white: rgba(255, 255, 255, 0.8);
+$off-gray: rgba(255, 255, 255, 0.56);
+$off-black: rgba(0, 0, 0, 0.8);
+$overlayColor: fade-out($bodyColor, 0.13%);
+
+
+// navbar
+$navbarHeight: 80px;
+// forms
+$inputPadding: 16px;
+$textareaPadding: 16px;
+// buttons
+$buttonPadding: 16px;
+// utility
+$ease: all 0.3s ease;
+$ease-in: all 0.3s ease-in;
+$ease-out: all 0.3s ease-out;
+$overlay: linear-gradient(to bottom, transparent 48%, rgba(0, 0, 0, 0.8) 100%);
+$elevation: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12),
+  0 1px 5px 0 rgba(0, 0, 0, 0.2);
+$textElevation: 0 2px 2px rgba(0, 0, 0, 0.56);
+
+// box model
+$border: solid 1px $border-color;
+$radius: 12px;
+// navbar

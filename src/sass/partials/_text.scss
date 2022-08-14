@@ -1,0 +1,49 @@
+// text
+.textCenter {
+  text-align: center;
+}
+
+.textUppercase {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.textCap {
+  text-transform: capitalize;
+}
+
+.textWithLine {
+  @extend .relative;
+  &:after {
+    content: '';
+    display: inline-block;
+    width: 100%;
+    position: absolute;
+    top: 1.5em;
+    left: 0;
+    height: 3px;
+    background: $color;
+    animation: emphasis 0.3s ease;
+  }
+}
+
+.boldText {
+  font-weight: $bold;
+}
+
+.lightText {
+  font-weight: $light;
+  font-family: $body-font;
+}
+
+.regularText {
+  font-weight: $regular;
+}
+
+.headings {
+  margin: 0;
+  color: $black;
+  line-height: 1.2;
+}
+
+

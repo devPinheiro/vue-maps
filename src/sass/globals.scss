@@ -1,0 +1,71 @@
+// fonts
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+// partials
+@import './partials/variables';
+@import './partials/flex';
+@import './partials/buttons';
+@import './partials/elements';
+@import './partials/flex';
+@import './partials/text';
+@import './partials/colors';
+@import './partials/responsive';
+@import './partials/utility';
+@import './partials/typography';
+
+* {
+  outline: none;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $body-font;
+  // background: rgb(141, 21, 222);
+  // background: linear-gradient(
+  //   81deg,
+  //   rgba(141, 21, 222, 1) 0%,
+  //   rgba(253, 29, 29, 1) 45%,
+  //   rgba(252, 201, 52, 1) 74%,
+  //   rgba(252, 176, 69, 1) 85%,
+  //   rgba(252, 88, 69, 1) 100%
+  // );
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url('https://res.cloudinary.com/appnet/image/upload/v1659627371/Multiskills/macos-monterey-3840x2160-wwdc-2021-5k-23424.jpg');
+  @media screen and (max-width: 480px) {
+    padding: 0.8em;
+  }
+}
+
+html {
+  font-weight: $regular;
+  font-family: $body-font;
+  text-rendering: optimizeLegibility;
+  line-height: $line-height;
+  color: $gray-500;
+
+  @media screen and (min-width: 0) {
+    font-size: $body-size;
+  }
+
+  @media screen and (min-width: $tablet) {
+    font-size: $body-size + 1;
+  }
+
+  @media screen and (min-width: $desktop) {
+    font-size: $body-size + 2;
+  }
+}
+
+// scrollbar
+::-webkit-scrollbar {
+  width: 6px;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: $theme-bg-color;
+  border-radius: 10px;
+}

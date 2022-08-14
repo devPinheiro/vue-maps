@@ -1,0 +1,114 @@
+// headings
+h1 {
+  font-size: $h1-size;
+  @extend .lightText;
+}
+
+h2 {
+  font-size: $h2-size;
+  @extend .lightText;
+}
+
+h3 {
+  font-size: $h3-size;
+  @extend .regularText;
+}
+
+h4,
+.title {
+  font-size: $h4-size;
+  @extend .regularText;
+}
+
+h5 {
+  font-size: $h5-size;
+  @extend .regularText;
+}
+
+h6 {
+  font-size: $h6-size;
+  @extend .regularText;
+}
+
+small {
+  font-size: $h6-size;
+  letter-spacing: 0.5px;
+  display: inline-block;
+}
+
+strong {
+  @extend .boldText;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @extend .headings;
+}
+
+p {
+  margin: 0.25rem 0;
+  &.tracked {
+    max-width: 372px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+ul,
+ol {
+  &.wide {
+    line-height: inherit;
+    li {
+      @extend .mb-16;
+      @extend .boldText;
+    }
+  }
+}
+
+address {
+  font-style: normal;
+}
+
+time {
+  font-size: inherit;
+  font-weight: $bold;
+  color: $gray-900;
+}
+
+// links
+a,
+.link {
+  text-decoration: none;
+  outline: none;
+  cursor: pointer;
+
+  &:not(.btn) {
+    &:not(.dark) {
+      color: $off-white;
+    }
+    &.dark {
+      color: $off-gray;
+    }
+    font-weight: $light;
+    @extend .ease;
+
+    &:hover,
+    &.active {
+      color: $white;
+    }
+  }
+}
+
+// hr
+hr {
+  border: $border;
+  margin: 40px 0;
+}
+
+.mb-16 {
+  margin-bottom: 16px;
+}

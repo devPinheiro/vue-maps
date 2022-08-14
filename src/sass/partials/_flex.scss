@@ -1,0 +1,124 @@
+//flexbox
+.flex {
+  display: flex;
+}
+
+.f-column {
+  flex-direction: column;
+}
+
+.f-wrap {
+  flex-wrap: wrap;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-space-between {
+  justify-content: space-between;
+}
+
+.justify-space-around {
+  justify-content: space-around;
+}
+
+.justify-end {
+  justify-content: flex-end;
+}
+
+.justify-start{
+  justify-content: flex-start;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.align-space-between {
+  align-items: space-between;
+}
+
+.align-space-around {
+  align-items: space-around;
+}
+
+.align-end {
+  align-items: flex-end;
+}
+
+.align-start {
+  align-items: flex-start;
+}
+
+.align-self-end{
+  align-self: flex-end;
+}
+
+.align-self-center{
+  align-self: center;
+}
+
+
+// flex layouts
+.f-page {
+  @extend .flex;
+  @extend .f-column;
+  @extend .align-center;
+  @extend .w-100;
+
+  // & > header {
+  //   flex-grow: 0;
+  // }
+  // & > main {
+  //   flex-grow: 1;
+  //   @extend .container;
+  // }
+  // & > footer {
+  //   flex-grow: 0;
+  // }
+}
+
+.f-split {
+  @extend .flex;
+  @extend .justify-space-between;
+  @extend .align-center;
+}
+
+.f-spread {
+  @extend .flex;
+  @extend .justify-space-around;
+  @extend .align-center;
+}
+
+.f-center {
+  @extend .flex;
+  @extend .justify-center;
+  @extend .align-center;
+}
+
+.f-v-split {
+  @extend .flex;
+  @extend .f-column;
+  @extend .justify-space-between;
+}
+
+.f-v-center {
+  @extend .flex;
+  @extend .align-center;
+}
+
+.f-h-center {
+  @extend .flex;
+  @extend .justify-center;
+}
+
+.f-l-center {
+  @extend .f-column;
+  @extend .f-center;
+}
+
+.f-l-main {
+  @extend .f-l-center;
+  min-height: 50vh;
+}

@@ -1,0 +1,50 @@
+// ui elements
+
+
+.list {
+  line-height: 2.5;
+}
+
+.badge {
+  @extend .primaryBkg;
+  color: $gray-200;
+  border-radius: $radius;
+  padding: 4px 8px;
+}
+
+.tooltip {
+  @extend .relative;
+  @extend .ease;
+  &::before {
+    content: attr(data-tooltip);
+    @extend .absolute;
+    // @extend .p-16;
+    @extend .primary;
+    @extend .hide;
+    @extend .textCenter;
+    display: inline-block;
+    min-width: 156px;
+    background: $slate-100;
+    border-radius: $radius;
+    left: -32px;
+    bottom: 32px;
+    animation: fade-in 0.3s ease;
+  }
+  &:hover::before {
+    display: block;
+  }
+}
+
+// .overlay {
+//   @extend .fixed;
+//   @extend .border-box;
+//   top: 0;
+//   left: 0;
+//   right: 0;
+//   height: 100vh;
+//   width: 100vw;
+//   backdrop-filter: blur(4px);
+//   background-color: $overlayColor;
+//   z-index: 999;
+//   padding: 12vh;
+// }

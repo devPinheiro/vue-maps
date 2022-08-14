@@ -1,0 +1,22 @@
+// responsive utilities
+.hide {
+  display: none;
+}
+
+.hide-laptop {
+  @media #{$laptop-min} {
+    display: none;
+  }
+}
+
+.hide-tablet {
+  @media #{$laptop-down} {
+    display: none;
+  }
+}
+
+.hide-mobile {
+  @media #{$tablet-down} {
+    display: none;
+  }
+}
