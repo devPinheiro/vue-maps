@@ -1,0 +1,97 @@
+// transitions
+.ease {
+  transition: $ease;
+}
+
+.ease-in {
+  transition: $ease-in;
+}
+
+.ease-out {
+  transition: $ease-out;
+}
+
+.elevation {
+  box-shadow: $elevation;
+}
+
+// position
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.fixed {
+  position: fixed;
+}
+
+.border-box {
+  box-sizing: border-box;
+}
+
+// images
+.imgRes {
+  max-width: 100%;
+  box-sizing: border-box;
+  object-fit: contain;
+}
+
+.imgOverlay {
+  &:after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: $overlay;
+    z-index: 0;
+  }
+}
+
+// container
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  // width: 90vw;
+}
+
+//animation utilities
+.emphasis {
+  animation: emphasis 0.4s both ease-out;
+}
+
+.show-up {
+  animation: show-up 0.3s ease;
+}
+
+.slide-in {
+  animation: slide-in 0.3s ease;
+}
+
+.overlap {
+  margin-top: -4vw;
+}
+
+// size utilities
+.fullHeight {
+  min-height: 100vh;
+}
+
+.h-100 {
+  height: 100%;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.size-100 {
+  @extend .h-100;
+  @extend .w-100;
+}
+
+// @include make-spaces();
